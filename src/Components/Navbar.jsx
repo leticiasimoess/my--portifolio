@@ -1,6 +1,7 @@
-import  { useState } from "react";
+import { useState } from "react";
 import "../Style/components-sass/navbar.scss";
-import logo from "../Assets/logo.png";
+import logo from "../assets/logo.png";
+
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FaHome, FaUser, FaBriefcase, FaEnvelope, FaCode } from "react-icons/fa";
 
@@ -13,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
        <div className="logo">
-    <img src={logo} alt="Logo" />
+    <img src={logo} alt="logo" />
     <div className="text">
       <h2>Leticia Simões</h2>
       <p>Desenvolvedora Front-end</p>

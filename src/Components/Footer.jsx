@@ -1,7 +1,7 @@
 
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import "../Style/components-sass/footer.scss";
-import logo from "../Assets/logo.png"; // Adjust the path as necessary
+import logo from "../assets/logo.png"; // Adjust the path as necessary
 
 const Footer = () => {
   return (
