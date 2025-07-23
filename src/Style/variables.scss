@@ -1,0 +1,22 @@
+// variables.scss
+$colors-primary: (
+  primary: #faf1f4,
+  bg: #ffffff,
+  text: rgb(242, 237, 237)
+);
+
+$colors-secondary: (
+  primary: #3f51b5,
+  bg: #f4f4f4,
+  text: #111111
+);
+
+
+
+
+
+:root {
+  --color-primary: #3f51b5;
+ 
+  --color-text: #ffffff;
+}

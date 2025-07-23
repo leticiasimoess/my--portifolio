@@ -1,0 +1,78 @@
+@import "../variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background-grid {
+  background-color: #000; // fundo preto
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 90px 80px; // tamanho dos quadrados
+  
+  width: 100%;
+  height: 100vh;
+ font-family: Inter, sans-serif;
+  overflow-x: hidden; // evita scroll lateral por erro de margem
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+// Telas pequenas (smartphones)
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social-icons {
+    margin: 10px 0;
+  }
+}
+
+// Telas médias (tablets e laptops)
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar-container {
+    padding: 15px 40px;
+  }
+
+  .footer-container {
+    padding: 30px;
+  }
+}
+
+// Telas grandes (monitores grandes ou ultra-wide)
+@media (min-width: 1025px) {
+  .navbar-container {
+    padding: 20px 80px;
+  }
+
+  .footer-container {
+    padding: 40px 80px;
+    justify-content: space-between;
+  }
+}
+
